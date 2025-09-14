@@ -1,0 +1,42 @@
+useState
+
+useState — bu oddiy qilib aytganda o‘zgaruvchi + funksiyasi.
+
+Odatda JS’da let count = 0 deb yozardik, lekin React qayta render bo‘lganda u qiymatni yo‘qotib qo‘yadi.
+
+Shuning uchun const [count, setCount] = useState(0) qilib yozamiz.
+
+Birinchisi (count) – qiymat. Ikkinchisi (setCount) – uni o‘zgartirish uchun funksiya.
+
+Har safar setCount chaqirilsa, komponent qayta chiziladi
+
+Props
+
+Props — bu komponentga tashqaridan yuboriladigan ma’lumot.
+
+Oddiy qilib aytganda, chaqirgan joyidan argument tashlaymiz.
+
+propsni o‘qish faqat ichkarida bo‘ladi, o‘zgartirib bo‘lmaydi (read-only)
+
+Ba’zan komponentga oddiy text yoki boshqa taglarni o‘rtasiga joylamoqchimiz.
+
+Shunda children ishlatiladi.
+
+props.children — o‘rtaga yozilgan narsani tutib oladi.
+
+CSSni tashqarida yozish shart emas, React ichida style berib yuborish ham mumkin.
+
+Bitta farqi: CSS’dagi - belgilarini camelCase bilan yozamiz. (background-color → backgroundColor).
+
+Qiymatlar string yoki son bo‘lishi kerak.
+
+
+Conditional Rendering (shartli chiqish)
+
+React’da if, ?, && bilan elementlarni shartli ko‘rsatish mumkin.
+
+Oddiy qilib: agar shart true bo‘lsa, chiqadi.
+
+Biror massivni chiqarish uchun .map() ishlatiladi.
+
+Har doim key berib ketish kerak (React shart qiladi).
